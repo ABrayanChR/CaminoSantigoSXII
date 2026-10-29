@@ -34,3 +34,51 @@ This project was originally developed to model a 12th-century horseback route al
 git clone [https://github.com/YOUR_USER/YOUR_REPOSITORY.git](https://github.com/YOUR_USER/YOUR_REPOSITORY.git)
 cd YOUR_REPOSITORY
 pip install -r requirements.txt
+```
+
+# Data Format Preparation
+Before running the program, you must provide a .txt file containing the route data tabulated in UTM (Universal Transverse Mercator) format. The file must have four columns:
+
+X coordinates (abscissa)
+
+Y coordinates (ordinate)
+
+Z coordinates (elevation)
+
+City/Location name (string)
+
+# Usage
+Run the main execution script from your terminal:
+
+```bash
+python principal.py
+```
+The interactive menu will prompt you to:
+
+Select the .txt data file to process.
+
+Define the scale (e.g., 1 for 1 unit = 1 kilometer, 0.001 for 1 unit = 1 meter).
+
+Toggle city labels on the 3D map (Type 1 for Yes, 0 for No).
+
+Define the distance between milestones (in scaled units).
+
+Once configured, the program will display the initial route. Close the plot and press Enter in the terminal to trigger the Newton-Raphson milestone calculation. A final 3D plot will open displaying the equidistant markers.
+
+# Requirements
+Python 3.8 or higher
+
+numpy
+
+scipy
+
+matplotlib
+
+
+---
+
+### requirements.txt
+```text
+numpy>=1.21.0
+scipy>=1.7.0
+matplotlib>=3.4.0
