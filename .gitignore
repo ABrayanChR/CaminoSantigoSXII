@@ -1,22 +1,22 @@
-# Editor settings
-.idea/
-.vscode/
-
 # Python cache and environments
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 .venv/
 venv/
+env/
+.env
 
-# Generated data
-simulaciones/
-*.npz
+# IDE and Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# Videos (heavy; upload them to Releases or YouTube instead)
-videos/
-*.mov
-*.mp4
-
-# OS files
+# OS hidden files
 .DS_Store
 Thumbs.db
+
+# Optional: Ignore data files if they are too heavy or private
+# (Comment this out if you want to push your default data.txt files to GitHub)
+# *.txt
